@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabecera */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Logo con imagen y texto */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 230px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: "Cursive", sans-serif;
+  font-size: 1.8em;
+  color: #8b0000;
+  font-weight: bold;
+}
+
+/* Menú de navegación dentro de la imagen */
+.hero-nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.hero-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+  padding: 10px 15px;
+  background-color: #333;
+  border-radius: 3px;
+  min-width: 150px;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+
+.hero {
+  position: relative;
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjEZ6ld_-ljQFWxMaVgiaIjrEinahna81b6PcRVMZTxAUwBydm42MTdjXLP6299D0OKDqPkUUfZr9YszZ67u_d4q9mbTyzNFsTrUrH_I7qN119cuBEUugbf-DSIgCg1i1rWNH7f9vQbjgGa/s640/14A1439.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
+/* Botones en la imagen */
+.hero-buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+}
+
+.hero-buttons a {
+  padding: 12px 25px;
+  font-size: 1.1em;
+  text-decoration: none;
+  border-radius: 50px;
+  color: white;
+  display: inline-block;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-red {
+  background-color: #b22222;
+}
+
+.btn-gray {
+  background-color: #4a4a4a;
+  color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 1px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer .locations {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #b8a9c9;
+}
+
+footer .credits {
+  margin-top: 20px;
+  border-top: 1px solid #5a4d62;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #b8a9c9;
+}
+
+/* Redes sociales */
+.social-icons {
+  background-color: #000000;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  display: flex; /* Alineado el contenido en una fila */
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons ul li {
+  margin: 0 10px;
+}
+
+.social-icons ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f7f7f;
+  border-radius: 5px;
+}
+
+.social-icons ul li:first-child a {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+
+/* Color para el hover de los íconos */
+.social-icons ul li a:hover {
+  background-color: #a9a9a9;
+}
+.social-icons ul li a:hover {
+  background-color: #a9a9a9;
+}
+
+/* Icono de menú */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
