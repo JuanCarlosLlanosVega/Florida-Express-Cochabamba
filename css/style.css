@@ -180,3 +180,66 @@ footer .credits {
   font-size: 28px;
   cursor: pointer;
 }
+
+/* codigos RESPONSIVOS para el Programa de Transportes*/
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center;
+  }
+
+  .logo img {
+    width: 250px; /*  tamaño del logo */
+    margin-bottom: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.5em; /* tamaño del texto del logo */
+    text-align: center;
+  }
+
+  .menu-icon {
+    font-size: 24px; /* tamaño del ícono del menú */
+    margin-top: 10px;
+  }
+}
+
+/*Responsivo para menu de navegación*/
+
+@media (max-width: 768px) {
+  .hero-nav {
+    flex-direction: column;
+    gap: 5px;
+    bottom: auto;
+    top: 10px; /* situamos al menú en la parte superior */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .hero-buttons {
+    flex-direction: row; /* botones en una sola fila */
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .hero-buttons a {
+    font-size: 0.9em;
+    padding: 10px 20px; /*  tamaño de los botones */
+  }
+}
+
+/*Responsivo de la sección texto e íconos de redes sociales*/
+
+@media (max-width: 768px) {
+  .social-icons ul li:first-child a {
+    font-size: 14px; /* tamaño del texto */
+    padding-right: 0;
+    white-space: nowrap;
+  }
+
+  .social-icons ul li a {
+    width: 30px; /* tamaño de los íconos */
+    height: 30px;
+  }
+}
