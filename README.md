@@ -1,3 +1,5 @@
+![Pagina Web Principal](https://github.com/JuanCarlosLlanosVega/Florida-Express-Cochabamba/blob/master/images/48.JPG)
+
 # Florida Express Cochabamba
 
 Este proyecto es una página web para la empresa terrestre de transporte interdepartamental "Florida Express Cochabamba".
