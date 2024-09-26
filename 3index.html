@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florida Express Cbba.</title>
+  <link rel="stylesheet" href="css/2style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    /* Estilos generales */
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Contenedor principal */
+    .main-container {
+      max-width: 900px; /* Ancho máximo de la sección */
+      margin: 0 auto; /* Centrar la sección */
+      padding: 20px;
+    }
+
+    .ticket-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      margin: 20px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #f9f9f9;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .ticket-details {
+      display: flex;
+      gap: 20px;
+    }
+
+    .ticket-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .ticket-company {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #B22222;
+    }
+
+    .ticket-time {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .ticket-time span {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    .ticket-price {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+      text-align: right;
+    }
+
+    .ticket-price small {
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    .btn-select {
+      padding: 10px 20px;
+      background-color: #B22222;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-select:hover {
+      background-color: #8B0000;
+    }
+
+    /* Iconos */
+    .icon {
+      font-size: 1.5em;
+      color: #555;
+    }
+
+    /* Estilos responsivos */
+    @media (max-width: 768px) {
+      .ticket-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .ticket-details {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .ticket-price {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <div class="logo">
+      <img src="9.jpg" alt="Logo Florida Express Cbba."> <!-- Cambia la imagen del logo -->
+      <span class="logo-text">Florida Express Cbba.</span>
+    </div>
+    <div class="header-buttons">
+      <a href="#" class="btn-red">Compre su pasaje aquí</a>
+      <a href="#" class="btn-gray">Rastree su envío aquí</a>
+    </div>
+    <div class="menu-icon">☰</div>
+  </header>
+
+  <!-- Sección de Tickets -->
+  <section class="main-container">
+    <div class="ticket-container">
+      <div class="ticket-details">
+        <div class="icon"><i class="fas fa-bus"></i></div>
+        <div class="ticket-info">
+          <span class="ticket-company">FLORIDA EXPRESS CBBA.</span>
+          <div class="ticket-time">
+            <span>Salida: COCHABAMBA</span>
+            <span><i class="fas fa-calendar-alt"></i> FECHA-HORA</span>
+            <span>Llegada: SANTA CRUZ</span>
+            <span><i class="fas fa-calendar-alt"></i> FECHA-HORA</span>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-price">
+        Bs 000.00<br>
+        <small>por pasajero</small>
+        <button class="btn-select">Seleccionar</button>
+      </div>
+    </div>
+
+    <div class="ticket-container">
+      <div class="ticket-details">
+        <div class="icon"><i class="fas fa-bus"></i></div>
+        <div class="ticket-info">
+          <span class="ticket-company">FLORIDA EXPRESS CBBA.</span>
+          <div class="ticket-time">
+            <span>Salida: COCHABAMBA</span>
+            <span><i class="fas fa-calendar-alt"></i> FECHA-HORA</span>
+            <span>Llegada: SANTA CRUZ</span>
+            <span><i class="fas fa-calendar-alt"></i> FECHA-HORA</span>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-price">
+        Bs 000.00<br>
+        <small>por pasajero</small>
+        <button class="btn-select">Seleccionar</button>
+      </div>
+    </div>
+
+    <div class="ticket-container">
+      <div class="ticket-details">
+        <div class="icon"><i class="fas fa-bus"></i></div>
+        <div class="ticket-info">
+          <span class="ticket-company">FLORIDA EXPRESS CBBA.</span>
+          <div class="ticket-time">
+            <span>Salida: COCHABAMBA</span>
+            <span><i class="fas fa-calendar-alt"></i> FECHA-HORA</span>
+            <span>Llegada: SANTA CRUZ</span>
+            <span><i class="fas fa-calendar-alt"></i> FECHA-HORA</span>
+          </div>
+        </div>
+      </div>
+      <div class="ticket-price">
+        Bs 000.00<br>
+        <small>por pasajero</small>
+        <button class="btn-select">Seleccionar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Florida Express Cochabamba</strong></p>
+    <p class="locations">Cochabamba - Cercado</p>
+    <p>Bolivia</p>
+    <div class="credits">
+      <p>© ATT 2024 | All Rights Reserved | Developed by the department</p>
+      <p>LLanos Vega Juan Carlos - Programación Web</p>
+    </div>
+  </footer>
+
+  <!-- Redes Sociales -->
+  <div class="social-icons">
+    <ul>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+      <li><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
+    </ul>
+  </div>
+
+  <script src="js/sansiMain.js"></script>
+</body>
+</html>

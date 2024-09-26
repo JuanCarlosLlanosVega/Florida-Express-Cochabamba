@@ -1,0 +1,265 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cabecera */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+  flex-wrap: wrap; /* Permitir que los elementos se ajusten en líneas */
+}
+
+/* Logo con imagen y texto */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: "Cursive", sans-serif;
+  font-size: 1.5em;
+  color: #8b0000;
+  font-weight: bold;
+}
+
+/* Botones en el header */
+.header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.header-buttons a {
+  padding: 10px 15px;
+  font-size: 1em;
+  text-decoration: none;
+  border-radius: 50px;
+  color: white;
+  background-color: #8b0000;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.header-buttons .btn-gray {
+  background-color: #4a4a4a;
+  color: #f1f1f1;
+}
+
+.header-buttons a:hover {
+  background-color: #b22222;
+}
+
+/* Sección de búsqueda */
+.search-section {
+  background-color: white;
+  padding: 40px;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 600px; /* Limitar ancho máximo en pantallas grandes */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-section h2 {
+  text-align: left;
+  color: #8b0000;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.search-section form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.search-section label {
+  font-size: 1.1em;
+  color: #333;
+  width: 100%;
+}
+
+.search-section select,
+.search-section input[type="date"],
+.search-section input[type="number"] {
+  padding: 10px;
+  width: 100%;
+  max-width: 300px; /* Limitar el ancho máximo */
+  border: 1px solid #555;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.search-section input[type="number"] {
+  max-width: 150px; /* Limitar el ancho del campo de pasajeros */
+}
+
+.search-button {
+  width: 100%;
+}
+
+.search-button button {
+  background-color: #8b0000;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.2em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+
+.search-button button:hover {
+  background-color: #b22222;
+}
+
+/* Footer */
+footer {
+  background-color: #4a4a4a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer .locations {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #b8a9c9;
+}
+
+footer .credits {
+  margin-top: 20px;
+  border-top: 1px solid #5a4d62;
+  padding-top: 10px;
+  font-size: 12px;
+  color: #b8a9c9;
+}
+
+/* Redes sociales */
+.social-icons {
+  background-color: #000000;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons ul li {
+  margin: 0 10px;
+}
+
+.social-icons ul li a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7f7f7f;
+  border-radius: 5px;
+}
+
+.social-icons ul li:first-child a {
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  padding-right: 20px;
+  white-space: nowrap;
+}
+
+/* Color para el hover de los íconos */
+.social-icons ul li a:hover {
+  background-color: #a9a9a9;
+}
+
+/* Icono de menú */
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Cambios para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .logo img {
+    width: 150px; /* Ajustar el tamaño del logo */
+    margin-bottom: 10px;
+  }
+
+  .logo-text {
+    font-size: 1.2em; /* Ajustar el tamaño del texto del logo */
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  /* Centrar los botones debajo del logo */
+  .header-buttons {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center; /* Centrar los botones */
+    margin-bottom: 15px; /* Añadir espacio entre los botones y la siguiente sección */
+  }
+
+  .header-buttons a {
+    text-align: center;
+    width: 80%; /* Ajustar el ancho para móviles */
+    max-width: 300px; /* Limitar el ancho de los botones */
+  }
+
+  .search-section {
+    padding: 20px;
+  }
+
+  .search-section form {
+    flex-direction: column;
+  }
+
+  .search-button {
+    text-align: center;
+  }
+
+  .social-icons ul li a {
+    width: 30px;
+    height: 30px;
+  }
+}

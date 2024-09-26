@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florida Express Cbba.</title>
+  <link rel="stylesheet" href="css/2style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <div class="logo">
+      <img src="9.jpg" alt="Logo Florida Express Cbba."> <!-- Cambia la imagen del logo -->
+      <span class="logo-text">Florida Express Cbba.</span>
+    </div>
+    <div class="header-buttons">
+      <a href="#" class="btn-red">Compre su pasaje aquí</a>
+      <a href="#" class="btn-gray">Rastree su envío aquí</a>
+    </div>
+    <div class="menu-icon">☰</div>
+  </header>
+
+  <!-- Sección de búsqueda -->
+  <section class="search-section">
+    <h2>Buscar Salidas</h2>
+    <form>
+      <div>
+        <label for="origin">Ciudad de partida</label>
+        <select id="origin">
+          <option value="" disabled selected>Seleccione ciudad origen</option>
+          <option value="1">Ciudad 1</option>
+          <option value="2">Ciudad 2</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="destination">Ciudad de llegada</label>
+        <select id="destination">
+          <option value="" disabled selected>Seleccione ciudad destino</option>
+          <option value="1">Ciudad 1</option>
+          <option value="2">Ciudad 2</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="departure-date">Fecha salida</label>
+        <input type="date" id="departure-date">
+      </div>
+
+      <div>
+        <label for="passengers">Pasajeros</label>
+        <input type="number" id="passengers" value="1" min="1">
+      </div>
+
+      <div class="search-button">
+        <button type="submit">
+          <i class="fas fa-search"></i> Buscar
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Florida Express Cochabamba</strong></p>
+    <p class="locations">Cochabamba - Cercado</p>
+    <p>Bolivia</p>
+    <div class="credits">
+      <p>© ATT 2024 | All Rights Reserved | Developed by the department</p>
+      <p>LLanos Vega Juan Carlos - Programación Web</p>
+    </div>
+  </footer>
+
+  <!-- Redes Sociales -->
+  <div class="social-icons">
+    <ul>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+      <li><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
+    </ul>
+  </div>
+
+  <script src="js/sansiMain.js"></script>
+</body>
+</html>
+
