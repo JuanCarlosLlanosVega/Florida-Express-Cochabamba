@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Florida Express Cbba.</title>
+  <link rel="stylesheet" href="css/2style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .passenger-section {
+      width: 60%;
+      margin: 0 auto;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      background: #f9f9f9;
+      margin-top: 20px;
+    }
+
+    .passenger-section h2 {
+      text-align: center;
+      color: #b30000;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      flex: 0 0 30%;
+      text-align: left;
+      margin-right: 10px;
+    }
+
+    .form-group input,
+    .form-group select {
+      flex: 1;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      width: calc(70% - 20px);
+    }
+
+    .form-group .radio-group {
+      display: flex;
+      align-items: center;
+    }
+
+    .form-group .radio-group label {
+      margin-right: 15px;
+    }
+
+    .form-group .radio-group input {
+      margin-right: 5px;
+    }
+
+    .phone-input {
+      display: flex;
+      align-items: center;
+    }
+
+    .phone-input select {
+      margin-right: 10px;
+    }
+
+    .btn-red {
+      background-color: #b30000;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .btn-red:hover {
+      background-color: #8a0000;
+    }
+
+    /* General styling for centering */
+    .centered {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabecera -->
+  <header>
+    <div class="logo">
+      <img src="9.jpg" alt="Logo Florida Express Cbba."> <!-- Cambia la imagen del logo -->
+      <span class="logo-text">Florida Express Cbba.</span>
+    </div>
+    <div class="header-buttons">
+      <a href="#" class="btn-red">Compre su pasaje aquí</a>
+      <a href="#" class="btn-gray">Rastree su envío aquí</a>
+    </div>
+    <div class="menu-icon">☰</div>
+  </header>
+
+  <!-- Sección Pasajero Principal -->
+  <section class="passenger-section">
+    <h2>Pasajero:</h2>
+    <form>
+      <div class="form-group">
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" placeholder="Correo electrónico" required>
+      </div>
+
+      <div class="form-group">
+        <label for="sex">Sexo</label>
+        <div class="radio-group">
+          <input type="radio" id="female" name="sex" value="Mujer">
+          <label for="female">Mujer</label>
+          <input type="radio" id="male" name="sex" value="Hombre" checked>
+          <label for="male">Hombre</label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="first-name">Nombre</label>
+        <input type="text" id="first-name" placeholder="Nombre" required>
+      </div>
+
+      <div class="form-group">
+        <label for="last-name">Apellidos</label>
+        <input type="text" id="last-name" placeholder="Apellidos" required>
+      </div>
+
+      <div class="form-group">
+        <label for="identity">Nº de Identidad o C.I.</label>
+        <input type="text" id="identity" placeholder="Nº de Identidad o C.I." required>
+      </div>
+
+      <div class="form-group">
+        <label for="birth-date">Fecha de nacimiento</label>
+        <input type="date" id="birth-date" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Número de teléfono</label>
+        <div class="phone-input">
+          <select id="phone-code">
+            <option value="+591" selected>🇧🇴 +591</option>
+          </select>
+          <input type="tel" id="phone" placeholder="Número de teléfono" required>
+        </div>
+      </div>
+
+      <div class="form-group centered">
+        <button type="submit" class="btn-red">Continuar</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p><strong>Florida Express Cochabamba</strong></p>
+    <p class="locations">Cochabamba - Cercado</p>
+    <p>Bolivia</p>
+    <div class="credits">
+      <p>© ATT 2024 | All Rights Reserved | Developed by the department</p>
+      <p>LLanos Vega Juan Carlos - Programación Web</p>
+    </div>
+  </footer>
+
+  <!-- Redes Sociales -->
+  <div class="social-icons">
+    <ul>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-telegram-plane"></i></a></li>
+      <li><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
+    </ul>
+  </div>
+
+  <script src="js/sansiMain.js"></script>
+</body>
+</html>
+
+
